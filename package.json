@@ -6,11 +6,13 @@
 	"description": "Automatically triggers a redirect by simulating a click on a DOM link",
 	"devDependencies": {
 		"@types/node": "^22.9",
+		"saas": "^1.80",
 		"typescript": "5.6"
 	},
 	"files": [
 		"LICENSE",
 		"README.md",
+		"*.css",
 		"*.d.ts",
 		"*.js"
 	],
@@ -22,14 +24,17 @@
 	"license": "ISC",
 	"module": "./auto-redirect.js",
 	"name": "@itrocks/auto-redirect",
+	"optionalDependencies": {
+		"@itrocks/build": "latest"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/itrocks-ts/auto-redirect.git"
 	},
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc && sass --no-source-map auto-redirect.scss:auto-redirect.css"
 	},
 	"type": "module",
 	"types": "./auto-redirect.d.ts",
-	"version": "0.0.4"
+	"version": "0.0.5"
 }
