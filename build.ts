@@ -1,3 +1,3 @@
-import build from '../build/build.js'
+import { build } from '../build/build.js'
 
-build<HTMLAnchorElement>('a.auto-redirect', async anchor => (await import('./auto-redirect.js')).default(anchor))
+build<HTMLAnchorElement>('a.auto-redirect', async anchor => (await import('./auto-redirect.js')).autoRedirect(anchor))

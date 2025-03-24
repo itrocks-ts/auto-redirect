@@ -1,5 +1,5 @@
 
-export default function autoRedirect(element: HTMLAnchorElement)
+export function autoRedirect(element: HTMLAnchorElement)
 {
 	const click = (event: MouseEvent) => event.stopPropagation()
 	element.addEventListener('click', click)

@@ -6,7 +6,7 @@
 	"description": "Automatically triggers a redirect by simulating a click on a DOM link",
 	"devDependencies": {
 		"@types/node": "^22.9",
-		"saas": "^1.80",
+		"sass": "^1.83",
 		"typescript": "5.6"
 	},
 	"files": [
@@ -36,5 +36,5 @@
 	},
 	"type": "module",
 	"types": "./auto-redirect.d.ts",
-	"version": "0.0.6"
+	"version": "0.0.7"
 }
