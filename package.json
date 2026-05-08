@@ -5,9 +5,8 @@
 	},
 	"description": "Automatically triggers a redirect by simulating a click on a DOM link",
 	"devDependencies": {
-		"@types/node": "^24.10",
 		"sass": "^1.95",
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"files": [
 		"LICENSE",
@@ -22,7 +21,6 @@
 		"it.rocks"
 	],
 	"license": "ISC",
-	"module": "./auto-redirect.js",
 	"name": "@itrocks/auto-redirect",
 	"optionalDependencies": {
 		"@itrocks/build": "latest"
@@ -34,7 +32,5 @@
 	"scripts": {
 		"build": "tsc && sass --no-source-map auto-redirect.scss:auto-redirect.css"
 	},
-	"type": "module",
-	"types": "./auto-redirect.d.ts",
-	"version": "0.0.11"
+	"version": "0.1.0"
 }
